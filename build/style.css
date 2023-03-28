@@ -19044,7 +19044,7 @@ readers do not read off random characters that represent icons */
 
 nav {
   color: #484848;
-  font-size: 16px;
+  font-size: 20px;
 }
 nav a {
   text-decoration: none;
@@ -19108,14 +19108,24 @@ form {
   top: -680px;
   width: 600px;
 }
-
 form button {
   background-color: #B2C19A !important;
+}
+form i {
+  color: #B2C19A;
+}
+
+#entreprise {
+  margin-top: 150px;
 }
 
 .titreSameLine:first-of-type {
   margin-left: 20px !important; /* Ajouter un espace après le mot "Nous" */
-  margin-bottom: 100px;
+  margin-bottom: 25px;
+}
+
+.textimg i {
+  color: #B2C19A;
 }
 
 .logo {
@@ -19141,12 +19151,20 @@ form button {
 }
 
 .servicePro {
-  margin-top: 200px !important;
+  margin-top: 150px !important;
+  margin-bottom: 50px;
+}
+.servicePro h5, .servicePro .h5, .servicePro p {
+  color: black !important;
 }
 
 .sectionLarge {
   width: auto;
   height: 100px;
+}
+
+.carousel h5, .carousel .h5, .carousel p {
+  color: #5B554F !important;
 }
 
 .carousel-item {
@@ -19160,6 +19178,7 @@ form button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px #B2C19A solid !important;
 }
 .formulaire input {
   width: 650px;
@@ -19193,6 +19212,7 @@ form button {
 }
 
 .globalFooter {
+  margin-top: 0 !important;
   height: 59px;
   background-color: #5B554F;
 }

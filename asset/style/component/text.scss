@@ -1,7 +1,7 @@
 
 nav {
     color: #484848;
-    font-size: 16px;
+    font-size: 20px;
     a {
         text-decoration: none;
         color: #484848;
@@ -78,18 +78,28 @@ form {
     left: 375px;
     top: -680px;
     width: 600px;
-}
-
-form {
+    
     button {
         background-color: $main-color !important;
     }
+    
+    i {
+        color: $main-color;
+    }
+}
+
+#entreprise {
+    margin-top: 150px;
 }
 
 .titreSameLine:first-of-type {
     margin-left: 20px !important; /* Ajouter un espace après le mot "Nous" */
-    margin-bottom: 100px;
-  }
+    margin-bottom: 25px;
+}
+
+.textimg i {
+    color: $main-color;
+}
 
 .logo {
     height: 75px;
@@ -114,11 +124,24 @@ form {
 }
 
 .servicePro {
-    margin-top: 200px !important;
+    margin-top: 150px !important;
+    margin-bottom: 50px;
+
+
+    h5, p {
+        color: black !important;
+    }
 }
+
 .sectionLarge {
     width: auto;
     height: 100px;
+}
+
+.carousel {
+    h5, p {
+        color: $three-color !important;
+    }
 }
 
 .carousel-item {
@@ -132,6 +155,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px $main-color solid !important;
 
     input {
         width: 650px;
@@ -154,11 +178,13 @@ form {
     background-color: $three-color;
 }
 .fonde {
+   
     background-color: $three-color;
     height: 583px;
 }
 
 .blocFooter {
+    
     font-size: 16px ;
     white-space: nowrap;
     height: 59px;
@@ -170,6 +196,7 @@ form {
 }
 
 .globalFooter {
+    margin-top: 0 !important;
     height: 59px;
     background-color: $three-color;
     

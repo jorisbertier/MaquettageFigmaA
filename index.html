@@ -14,28 +14,47 @@
 
 <body>
   <header>
-    <nav class="container-fluid">
-      <div class="row g-0 py-4">
-        <div class="col-4 text-center mb-2"><a href="#"><img src="./asset/img/Logo.png" class="logo"></a></div>
-        <div class="col-1"><a href="#">ACCUEIL</a></div>
-        <div class="col-1"><a href="#">L'ENTREPRISE</a></div>
-        <div class="col-1"><a href="#">SERVICES</a></div>
-        <div class="col-1"><a href="#">REALISATIONS</a></div>
-        <div class="col-1"><a href="#">CONTACT</a></div>
-        <div class="col-2 "></div>
-        <div class="col-1">
-          <a href="#"><i class="fa-brands fa-instagram"></a></i>
-          <a href="#"><i class="fa-brands fa-facebook"></a></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a href="#"><img src="./asset/img/Logo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav mx-auto">
+            <div class="nav-item">
+              <a class="nav-link" href="#">ACCUEIL</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#entreprise">L'ENTREPRISE</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#mesure">REALISATIONS</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </div>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <div class="nav-item">
+              <a href="#"><i class="fa-brands fa-instagram"></a></i>
+            <a href="#"><i class="fa-brands fa-facebook"></a></i>
+            </div>
+          </div>
         </div>
-        <hr>
       </div>
     </nav>
+    
+    
   </header>
 
   <!--SECTION ENTREPRISE EXPERTE-->
 
   <div class="container mb-5">
-    <h2>Une entreprise<br><span>EXPERTE</span></h2>
+    <h2 id="entreprise">Une entreprise<br><span>EXPERTE</span></h2>
   </div>
   <div class="container-fluid fond mb-5 sectionEntreprise d-flex justify-content-center align-items-center">
     <div class="container ">
@@ -62,13 +81,13 @@
 
   <!-- SERVICE PROFESIONNEL 3IMG 3TEXT-->
 
-  <h2 class="d-flex justify-content-center mt-5 servicePro">Des services <span class="titreSameLine">PROFESSIONNELS</span></h2>
+  <h2 class="d-flex justify-content-center mt-5 servicePro" id="services">Des services <span class="titreSameLine">PROFESSIONNELS</span></h2>
   <div class="container text-center pt-5 d-flex justify-content-center align-items-center textimg">
     <div class="row g-0">
       <div class="col-lg-4 col-md-6 col-sm-12">
         <img src="./asset/img/Services professionnels/Image_1.jpg" class="img">
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+      <div class="col-lg-4 col-md-6 col-sm-12 bg-light pt-4">
         <i class="fa-solid fa-clone"></i><br>
         <h3>Lorem <br>ipsum color</h3><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -79,7 +98,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12 ">
         <img src="./asset/img/Services professionnels/Image_2.jpg">
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+      <div class="col-lg-4 col-md-6 col-sm-12 bg-light pt-4">
         <i class="fa-solid fa-trowel"></i>
         <i class="fa-solid fa-paint-roller"></i><br>
         <h3>Lorem <br>ipsum color</h3><br>
@@ -91,7 +110,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12">
         <img src="./asset/img/Services professionnels/Image_3.jpg">
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+      <div class="col-lg-4 col-md-6 col-sm-12 bg-light pt-4">
         <i class="fa-solid fa-screwdriver-wrench"></i><br>
         <h3>Lorem <br>ipsum color</h3><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -105,7 +124,7 @@
   <!--SECTION 6IMG-->
 
   <div class="container mt-5">
-    <h2 class="servicePro">Des réalisations<br><span>SUR MESURE</span></h2>
+    <h2 class="servicePro" id="mesure">Des réalisations<br><span>SUR MESURE</span></h2>
   </div>
   <div class="container mt-5">
     <div class="row">
@@ -149,7 +168,7 @@
 
   <h2 class="d-flex justify-content-center mt-5 servicePro">Nos<span class="titreSameLine">SAVOIR-FAIRE</span></h2>
   <div class="container-fluid mt-5" class="sectionLarge">
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -161,12 +180,24 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./asset/img/Slider/Image_slider_1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img src="./asset/img/Slider/Image_slider_2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img src="./asset/img/Slider/Image_slider_3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -184,12 +215,12 @@
 
   <!--NOUS CONTACTER FORMULAIRE -->
 
-  <h2 class="d-flex justify-content-center mb- 5 mt-5 servicePro">Nous <span class="titreSameLine"> CONTACTER</span></h2>
+  <h2 class="d-flex justify-content-center mb- 5 mt-5 servicePro" id="contact">Nous <span class="titreSameLine"> CONTACTER</span></h2>
   <div class="container-fluid mt-5 py-5 fonde">
   </div>
 
   <form>
-    <div class="container mx-auto bg-light border border-2 formulaire">
+    <div class="container mx-auto bg-light border border-2 formulaire m-auto">
       <div class="form-row">
         <div class="form-group col-12">
           <br>
