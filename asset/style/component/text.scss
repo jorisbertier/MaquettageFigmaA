@@ -1,0 +1,107 @@
+
+nav {
+    color: #484848;
+    font-size: 16px;
+    a {
+        text-decoration: none;
+        color: #484848;
+    }
+    i {
+        font-size: 25px;
+    }
+
+}
+
+
+
+div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1, h2{
+    span {
+        color: $main-color;
+    }
+}
+
+
+footer {
+    margin-bottom: 50px;
+    white-space: nowrap;
+    ul {
+        list-style: none;
+        font-size: 16px;
+    }
+}
+
+form {
+    position: relative;
+    left: 550px;
+    top: -429px;
+    width: 600px;
+}
+
+form {
+    button {
+        background-color: $main-color !important;
+    }
+}
+
+.titreSameLine:first-of-type {
+    margin-left: 5px !important; /* Ajouter un espace après le mot "Nous" */
+  }
+
+.logo {
+    height: 75px;
+    width: 75px;
+}
+
+.imgExpertise {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 1300px;
+    top: 180px;
+}
+
+.sectionLarge {
+    width: auto;
+    height: 100px;
+}
+
+.textimg {
+    background-color: #F4F4F4;
+}
+
+.carousel-item {
+    height: 583px;
+}
+
+
+.fond {
+    background-color: $three-color;
+}
+.fonde {
+    background-color: $three-color;
+    height: 400px;
+}
+
+.blocFooter {
+    font-size: 16px ;
+    white-space: nowrap;
+    height: 59px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.globalFooter {
+    height: 59px;
+    background-color: $three-color;
+    
+}
+
